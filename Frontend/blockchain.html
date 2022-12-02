@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to my project
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-image: url("bg.jpg");
+                height: 1000; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+                background-color:rgb(102, 51, 0);
+                color:white;
+                font-family: 'Nunito', sans-serif; 
+                padding: 0%;
+                margin:0;
+            }
+			.header img {
+    			float: left;
+    			width: 100px;
+    			height: 100px;
+    			margin-top: 2px;
+    			margin-left: 10px;
+    /* padding-left: 6px; */
+    			background: #555;
+    /* opacity: 1; */
+			}
+			.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#logo{
+    margin: 1px 1px;
+    padding: 10px;
+}
+
+#logo img{
+    margin: 1px 1px;
+    height: 100px;
+}
+
+#navbar{
+    background-color:#114f8d;
+    
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	float : left
+}
+
+
+#navbar a{
+	color:white;
+	text-decoration: none;
+	font-size:18px;
+    padding:4px 25px;
+    display: inline-block;
+}
+#navbar a:hover{
+    background-color:lightskyblue;
+    border-radius: 5px;
+    
+}
+.main-dropdown 
+{
+    background-color: #114f8d;
+    position: absolute;
+    display: none;
+    
+}
+.main-dropdown a
+{
+    display: block;
+}
+.dropdown:hover .main-dropdown
+{
+    display: block;
+}
+
+			#main-header
+			{
+			    background: rgba(0,0,0,0.4);
+			    padding: 6px;
+			    padding-left: 6px;
+			    height: 150px;
+			    width: 100%;
+			    position: sticky;
+			    overflow: hidden;
+			    /* opacity: 0.8; */
+			}
+
+            .header h1 {
+                position: relative;
+                top: 25px;
+                left: 10px;
+                opacity: 1;
+                font-size: 50px;
+            }
+
+            #main-header
+            {
+                background: rgba(0,0,0,0.4);
+                padding: 6px;
+                padding-left: 6px;
+                height: 150px;
+                width: 100%;
+                /* opacity: 0.8; */
+            }
+            
+            #main-section
+            {
+                width:400px;
+                height: 1000px;
+                text-align: center;
+                padding : 10px 150px;
+                background-color: white;
+				color: black;
+            }
+            #main-section .myform
+            {
+                padding : 50px;
+            }
+            #main-section .form-group input
+            {
+                padding:15px;
+                margin:10px;
+                border-color: #3b5998;
+                border-radius: 5px;
+                font-size: 15px;
+                width: 300px;
+            }
+            #main-section input[type=submit]
+            {
+                cursor: pointer;
+                color: black;
+                width: 30%;
+                padding: 8px;
+                background-color:#3b5998;
+            }
+            #main-footer
+            {
+                background-color: #114f8d;
+                color:white;
+                text-align: center;
+                font-size:12px;
+                padding:1px;
+                margin-top: 0px;   
+            }
+            h3{color: black;
+               padding-left:15px;}
+
+        </style>
+    </head>
+    <header id="main-header">
+        <div class="header">
+            <img src="logo.jpeg" alt="logo" />
+            <h1>Land Block</h1>
+        </div>
+    </header>
+    <nav id="navbar">
+      <div class="container">
+        <ul>
+            <li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="dropdown">
+                    <a href="#"><i class="fa fa-university"></i> Government</a>
+                    <div class="main-dropdown">
+                        <p><a href="Validity.html"><i class="fa fa-check-square"></i> Check validity of land</a></p>
+                    </div>
+                </li>
+            <li><a href="blockchain.html"><i class="fa fa-user" aria-hidden="true"></i> User</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> LogOut</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br><br><br>
+    <center>
+    <section id="main-section">
+        <div class="myform">
+            <h3><strong>Enter User Details</strong></h3>
+            <form name="sendtoblockchain" >
+                <div class="form-group">
+                    <label for="input-propertyid">ID</label>
+                    <input type="text" id="userid" placeholder="Enter your User ID" required> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">Name</label>
+                    <input type="text" id="name" required placeholder="Enter your Name"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">Aadhar No</label>
+                    <input type="text" id="aadharno" required placeholder="Enter your Aadhar No"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">Contact No</label>
+                    <input type="text" id="contactno" required placeholder="Enter your Contact No"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">Email</label>
+                    <input type="text" id="email" required placeholder="Enter your Email"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">Pincode</label>
+                    <input type="text" id="pincode" required placeholder="Enter your Pincode"> 
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="input-propertyid">City</label>
+                    <input type="text" id="city" required placeholder="Enter your City"> 
+                </div>
+                <br>
+                <input type="button"  id="submit" value="Submit">
+            </form>
+    </section>
+    </center>
+    <br><br>
+    <p id="demo" ></p>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2022 Aryan Dhaor, Nikhil Agrawal, Yash Kapoor</p>
+    </footer>
+    <script>
+
+function validate(){
+var username = document.getElementById("logid").value;
+var password = document.getElementById("password").value;
+if ( username == "any" && password == "any@123"){
+
+      window.open("home.html"); 
+}
+else if(username != "" && password != ""){
+alert("Either Login-id or password is incorrect ");
+}
+}
+    </script>
+  </body>
+</html>
+
+                <!-- <div class="form-group">
+                     <label for="Digital_sign">Digital Signiture</label>
+                     <input type="text" id="digital_sign" required placeholder="Enter your Digital Signiture"> 
+                </div>
+                <br> -->

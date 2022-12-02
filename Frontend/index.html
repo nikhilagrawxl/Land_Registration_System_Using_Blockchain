@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to my project
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+        <style>
+            body{
+                background-image: url("bg.jpg");
+                height: 100; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+                background-color:rgb(102, 51, 0);
+                color:white;
+                font-family: 'Nunito', sans-serif; 
+                padding: 0%;
+                margin:0;
+            }
+            .header img {
+                float: left;
+                width: 100px;
+                height: 100px;
+                margin-top: 10px;
+                margin-left: 10px;
+                /* padding-left: 6px; */
+                background: #555;
+                /* opacity: 1; */
+            }
+
+            .header h1 {
+                position: relative;
+                top: 25px;
+                left: 10px;
+                opacity: 1;
+                font-size: 50px;
+            }
+
+            #main-header
+            {
+                background: rgba(0,0,0,0.4);
+                padding: 6px;
+                padding-left: 6px;
+                height: 150px;
+                width: 100%;
+                /* opacity: 0.8; */
+            }
+            
+            #main-section
+            {
+                width:400px;
+                height: 400px;
+                text-align: center;
+                padding : 10px 150px;
+                background-color: white;
+            }
+            #main-section .myform
+            {
+                padding : 50px;
+            }
+            #main-section .form-group input
+            {
+                padding:15px;
+                margin:10px;
+                border-color: #3b5998;
+                border-radius: 5px;
+                font-size: 15px;
+                width: 300px;
+            }
+            #main-section input[type=submit]
+            {
+                cursor: pointer;
+                color: white;
+                width: 30%;
+                padding: 8px;
+                background-color:#3b5998;
+            }
+            #main-footer
+            {
+                background-color: #114f8d;
+                color:white;
+                text-align: center;
+                font-size:12px;
+                padding:1px;
+                margin-top: 0px;   
+            }
+            h3{color: black;
+               padding-left:15px;}
+
+        </style>
+    </head>
+    <header id="main-header">
+        <div class="header">
+            <img src="logo.jpeg" alt="logo" />
+            <h1>Land Block</h1>
+        </div>
+    </header>
+    <br><br><br>
+    <center>
+    <section id="main-section">
+        <div class="myform">
+            <h3><strong>Login or Register </strong></h3>
+            <form >
+                <div class="form-group">
+                    <input type="text" id="logid" required placeholder="LOGIN ID"> 
+                </div>
+                <br>
+                <div class="form-group">
+                     <input type="password" id="password" required placeholder="PASSWORD"> 
+                </div>
+                <br>
+                <hr>
+               <input type="submit" onclick="validate()"  id="submit" value="Log-In">
+               &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="register" value="Register">
+                <p><a href="#" style="text-decoration: none;color:#3b5998;">Forgotten password?</a></p>
+            </div>
+            </form>
+    </section>
+    </center>
+    <br><br>
+    <p id="demo" ></p>
+    <footer id="main-footer">
+        <p>Copyright &copy; 2022 Aryan Dhaor, Nikhil Agrawal, Yash Kapoor</p>
+    </footer>
+    <script>
+
+function validate(){
+var username = document.getElementById("logid").value;
+var password = document.getElementById("password").value;
+if ( username == "any" && password == "any@123"){
+
+      window.open("home.html"); 
+}
+else if(username != "" && password != ""){
+alert("Either Login-id or password is incorrect ");
+}
+}
+    </script>
+  </body>
+</html>

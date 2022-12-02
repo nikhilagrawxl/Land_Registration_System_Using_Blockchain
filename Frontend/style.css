@@ -1,0 +1,216 @@
+
+
+body{
+    background-image: url("bg.jpg");
+    height: 100; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    background-color:rgb(102, 51, 0);
+    color:black;
+    font-family: 'Nunito', sans-serif; 
+    padding: 0%;
+    margin:0;
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 2px;
+    margin-left: 10px;
+    /* padding-left: 6px; */
+    background: #555;
+    /* opacity: 1; */
+}
+
+.header h1 {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    opacity: 1;
+    font-size: 50px;
+    color: white
+}
+
+#main-header
+{
+    background: rgba(0,0,0,0.4);
+    padding: 6px;
+    padding-left: 6px;
+    height: 150px;
+    width: 100%;
+    position: sticky;
+    overflow: hidden;
+    /* opacity: 0.8; */
+}
+
+#logo{
+    margin: 1px 1px;
+    padding: 10px;
+}
+
+#logo img{
+    margin: 1px 1px;
+    height: 100px;
+}
+
+#navbar{
+    background-color:#114f8d;
+    
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+#navbar li{
+	float : left
+}
+
+
+#navbar a{
+	color:white;
+	text-decoration: none;
+	font-size:18px;
+    padding:4px 25px;
+    display: inline-block;
+}
+#navbar a:hover{
+    background-color:lightskyblue;
+    border-radius: 5px;
+    
+}
+.main-dropdown 
+{
+    background-color: #114f8d;
+    position: absolute;
+    display: none;
+    
+}
+.main-dropdown a
+{
+    display: block;
+}
+.dropdown:hover .main-dropdown
+{
+    display: block;
+}
+
+#Showcase
+{
+    background-image: url('../images/Green.jpg');
+    background-position: center;
+    min-height: 150px; 
+    text-align: center;
+}
+
+#Showcase h1{
+    color:rgb(254, 255, 254);
+    font-size: 50px;
+    padding-top: 30px;
+    line-height:1.6em
+}
+
+#main{
+    float:left;
+    height: 230px;
+    width:67%;
+    padding: 15px;
+    border:2px rgb(187, 180, 180) solid;
+    border-radius:15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+#main2{
+    float:left;
+    height: 850px;
+    width:50%;
+    padding: 15px;
+    border:2px rgb(187, 180, 180) solid;
+    border-radius:15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+#sidebar
+{
+    float:right;
+    height:230px;
+    width:32%;
+    padding:15px;
+    border:2px rgb(187, 180, 180) solid;
+    border-radius:15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+#sidebar2
+{
+    float:right;
+    height:850px;
+    width:48%;
+    padding:15px;
+    border:2px rgb(187, 180, 180) solid;
+    border-radius:15px;
+    box-sizing: border-box;
+    background-color: white;
+}
+#main-section
+{
+    padding: 30px; 
+    padding-bottom: 10px;
+}
+#main-section .main-form
+{
+    width: 400px;
+    margin: 0 auto;
+    border:2px #ccc solid;
+    border-radius:5px; 
+    padding:20px;
+    background-color: white;
+}
+#main-section .main-form label
+{
+    display: block;
+    color: black;
+    font-size: 18px;
+}
+#main-section .main-form input[type="text"],input[type="email"]
+{
+    padding:10px;
+    width: 85%;
+    border-block-end-color: rgb(199, 196, 196);
+    border-block-start-color: rgb(212, 209, 209);
+    border-radius: 5px;
+}
+#main-section .main-form input[type="submit"]
+{
+  width: 19%;
+  padding: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#main-footer
+            {
+                background-color: #114f8d;
+                color:white;
+                text-align: center;
+                font-size:12px;
+                padding:1px;
+                margin-top: 0px;   
+            }
+
+
+
+
+
+
+
+
